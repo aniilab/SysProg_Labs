@@ -21,8 +21,8 @@ public class Analyzer {
             if (currentLine.isEmpty()) {
                 currentLine = " ";
             }
-            currentLine = currentLine.replaceAll("[^A-Za-zА-Яа-я\\і\\І\\s\\Ї\\ї\\Є\\є\\']", "");
-            String[] words = currentLine.split(" ");
+            currentLine = currentLine.replaceAll("[^A-Za-zА-Яа-я\\і\\І\\s\\Ї\\ї\\Є\\є\\']", " ");
+            String[] words = currentLine.split("\\s+");
 
             for (String word : words) {
                 word = word.toLowerCase();
