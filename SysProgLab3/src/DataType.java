@@ -1,0 +1,10 @@
+public enum DataType {
+    NUMBER,
+    STRING_CONSTANT,
+    CHAR_CONSTANT,
+    RESERVED_WORD,
+    OPERATOR,
+    PUNCTUATOR,
+    IDENTIFIER,
+    ERROR
+}
