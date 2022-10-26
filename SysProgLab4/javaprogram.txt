@@ -1,0 +1,31 @@
+import java.io.File;
+/*
+програма рахує суму студентів всіх груп
+ */
+
+public class Main{
+    public static void main(String[] args){
+        //створюєм групи
+        Group[] groups = new Group[]{new Group("TTP31", 29),
+                                     new Group("TTP32",30),
+                                     new Group("TK31",28)};
+        int i = 0;
+        int sum = 0;
+        while(i< groups.length){
+            sum+=groups[i].number;
+            i++;
+        }
+        System.out.println("Кількість студентів:"+'\t'+sum);
+
+    }
+}
+рандомне словечко
+
+class Group{
+    public String title;
+    public int number;
+    public Group(String title_, int number_){
+        this.title=title_;
+        this.number=number_;
+    }
+}
